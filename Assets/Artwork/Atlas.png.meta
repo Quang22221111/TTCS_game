@@ -342,7 +342,7 @@ TextureImporter:
       213: 4258081263921899527
     second: enemy_8
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -359,9 +359,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -371,8 +374,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -393,9 +396,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -407,6 +416,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -419,6 +429,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -431,6 +442,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -443,6 +455,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -455,6 +468,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2822,9 +2836,121 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Atlas_0: 4018074224661003100
+      Player_4: 6471941358250526302
+      Player_5: -4529042392078601758
+      Player_6: -7446026091647042388
+      Player_7: 5938012242645255967
+      Player_8: -4245738604243887485
+      Skull: 3776011452931145940
+      Trans_1_1: 8641384243396572052
+      Trans_1_2: -4587493814745062888
+      Trans_1_3: -3567842105655625524
+      Trans_1_4: -1848344407874879388
+      Trans_2_1: -8522647316823951839
+      Trans_2_2: -5702946244150972203
+      Trans_2_3: -3787600724761936466
+      Trans_2_4: 5754393474399109329
+      Trans_3_1: -5929060063041750168
+      Trans_3_2: -5359327551389089445
+      Trans_3_3: -4285797316073111437
+      Trans_3_4: 8339947867411896063
+      Trans_4_1: 7165621275903089736
+      Trans_4_2: -6183906966157414603
+      Trans_4_3: -7895132823266755316
+      Trans_4_4: 352713928470728827
+      boss_0: 21300082
+      chest_0: 21300084
+      chest_1: 21300086
+      chest_2: 21300088
+      chest_3: 21300090
+      chest_4: 21300092
+      chest_5: 21300094
+      crate_0: 21300096
+      crate_1: 21300098
+      crate_2: 21300100
+      crate_3: 21300102
+      enemy_0: 21300026
+      enemy_1: 3680619090928529440
+      enemy_2: 21300028
+      enemy_3: 1779747271024799556
+      enemy_4: 8411463563914695271
+      enemy_5: 3678316895343943306
+      enemy_6: 5468275346343796690
+      enemy_7: 3810199616485272264
+      enemy_8: 4258081263921899527
+      flag_0: 21300060
+      flag_1: 21300062
+      flag_2: 21300064
+      flag_3: 21300066
+      floor_0: 21300000
+      floor_1: 21300006
+      floor_10: 21300020
+      floor_11: 21300022
+      floor_12: 21300024
+      floor_2: 21300004
+      floor_3: 21300002
+      floor_4: 21300008
+      floor_5: 21300010
+      floor_6: 21300012
+      floor_7: 21300014
+      floor_8: 21300016
+      floor_9: 21300018
+      healing3_1: -1799913894488051378
+      healing3_2: -5691053987900664695
+      healing_0: 21300054
+      healing_1: 21300056
+      healing_2: 21300058
+      pillar_0: 21300104
+      pillar_1: 21300106
+      pillar_2: 21300108
+      pillar_3: 21300110
+      pillar_4: 21300112
+      pillar_5: 21300114
+      player_0: 21300030
+      player_1: 21300032
+      player_2: 21300034
+      player_3: 21300036
+      stairs_0: 21300140
+      stairs_1: 21300136
+      stairs_2: 21300142
+      stairs_3: 21300138
+      torch_0: 21300038
+      torch_1: 21300040
+      torch_2: 21300042
+      torch_3: 21300044
+      torch_4: 21300046
+      torch_5: 21300048
+      torch_6: 21300050
+      torch_7: 21300052
+      wall_0: 21300116
+      wall_1: 21300118
+      wall_10: -3373267612879319809
+      wall_11: -5571866524637575377
+      wall_12: -6726083762602269912
+      wall_13: -5352851427636792359
+      wall_14: 5756663353543333884
+      wall_15: -2204759511001655569
+      wall_16: -8255771079334560590
+      wall_17: -1271582270899746564
+      wall_2: 21300120
+      wall_3: 21300122
+      wall_4: 21300124
+      wall_5: 21300126
+      wall_6: 21300128
+      wall_7: 21300130
+      wall_8: 21300132
+      wall_9: 21300134
+      weapon_0: 21300068
+      weapon_1: 21300070
+      weapon_2: 21300072
+      weapon_3: 21300074
+      weapon_4: 21300076
+      weapon_5: 21300078
+      weapon_6: 21300080
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

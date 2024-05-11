@@ -84,7 +84,7 @@ TextureImporter:
       213: -8168794291777539684
     second: Dragon_8
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -101,9 +101,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -113,8 +116,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -135,9 +138,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +158,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -161,6 +171,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -743,9 +754,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Chest_Diamonds_0: -5502898106380633460
+      Chest_Diamonds_1: -4628821642650232607
+      Chest_Diamonds_2: -8245601474686339587
+      Chest_Enemy: 3833348978569025334
+      Dragon_0: -1007621799875005872
+      Dragon_1: 7236858470366593164
+      Dragon_2: 5967068118830826598
+      Dragon_3: -6818290705752391711
+      Dragon_4: -5048749159071775346
+      Dragon_5: 8500815652691911736
+      Dragon_6: -1560842793315140573
+      Dragon_7: -1634599686845655008
+      Dragon_8: -8168794291777539684
+      Heart_0: 4606908045521496030
+      Magma_0: 6649705915440041061
+      Magma_1: 1018569941188019713
+      Magma_2: -4227622105440066591
+      healing_water_0: -5026381916736205260
+      healing_water_1: -6451673945525926718
+      healing_water_2: 2581157477179793480
+      healing_water_3: -7224616341418251648
+      healing_water_4: 5668725160440815478
+      healing_water_5: 6314631127930079477
+      trap_0: 553103467783823420
+      trap_1: 2372743598965195846
+      trap_2: -5406773863940824077
+      trap_3: 6776819164531895083
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

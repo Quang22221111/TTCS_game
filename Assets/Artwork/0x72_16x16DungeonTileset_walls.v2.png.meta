@@ -72,7 +72,7 @@ TextureImporter:
       213: -3621274516661052080
     second: Door_Open
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -89,9 +89,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -101,8 +104,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -123,9 +126,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +146,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -149,6 +159,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -611,7 +622,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 04a86a7163361dc42bb9ed0f01b96da6
-      internalID: 7403498986500828486
+      internalID: -55221873618040926
       vertices: []
       indices: 
       edges: []
@@ -647,9 +658,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      0x72_16x16DungeonTileset_walls.v2_0: -3242722390855433593
+      Door_Close: -55221873618040926
+      Door_Close_1: 7403498986500828486
+      Door_Close_2: 5016346032840933272
+      Door_Close_3: -1263960800602630669
+      Door_Close_4: 3247264387464332945
+      Door_Close_5: -5685987594934843402
+      Door_Close_6: 6071116506575268734
+      Door_Close_7: 8899034060776329086
+      Door_Close_8: 7104031811348439506
+      Door_Open: -3621274516661052080
+      Door_Open_1: 5530907874578870354
+      Door_Open_2: -24883992459980073
+      Door_Open_3: 6719121712099030412
+      Door_Open_4: -6845369187352317684
+      wall_left_1: 128132142741479690
+      wall_left_2: -3967007177986673915
+      wall_left_3: -18216964932157281
+      wall_left_4: -3007209255048989822
+      wall_right_1: 7500876221548366899
+      wall_right_2: -468892589430026492
+      wall_right_3: -6300332273187410242
+      wall_right_4: 3247305230535157002
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

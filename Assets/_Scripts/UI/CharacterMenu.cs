@@ -5,13 +5,10 @@ using UnityEngine.UI;
 
 public class CharacterMenu : MonoBehaviour
 {
-    [Header("------Text------")]
     public Text levelTextMenu;
     public Text hitpointText, pesosText, upgradeCostText, xpText;
 
-    [Header("------Sprite/Image------")]  
     public Image characterSprite;                           public Image weaponSprite;                              private int currentCharacterSelection = 0;          
-    [Header("------其他------")]
     public RectTransform xpBar;                             public GameObject savingTextObject;
 
         public void OnArrowClick(bool right)

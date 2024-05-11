@@ -5,9 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [Header("------包含面板------")]
     public CharacterMenu characterMenu;                 public CharacterHUD characterHUD;                   public FloatingTextManager floatingTextManager; 
-    [Header("------特殊状态机------")]
     public Animator deathMenuAnim;                  
     
     private void Start()

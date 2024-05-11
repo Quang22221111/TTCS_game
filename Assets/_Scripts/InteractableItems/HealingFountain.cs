@@ -2,22 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//泉水恢复生命值脚本
-/* 
- *  备注：由于采用了AnimatedTile实现healingwater效果，所以需要关闭healingwater上的animator组件，否则出现重叠
- */
 public class HealingFountain : Colliderable
 {
-    public int healingAmount = 1;       //每次治疗量
-    public int healingTotal = 10;       //总共可以恢复多少血量
-    private float healCoolDown = 0.5f;  //每次治疗的间隔
+    public int healingAmount = 1;       
+    public int healingTotal = 10;       
+    private float healCoolDown = 0.5f;  
     private float lastHeal;
 
     protected override void OnCollide(Collider2D coll)
     {
-        //此处易出现bug:
-        //贴墙的泉水与tilemap中的Collision图层的砖块进行碰撞,进而检测失误
-        //解决方案:再添加Collision碰撞判定
+        
         if (coll.name == "Player" && GameManager.instance.player.isAlive)
         {
             //Debug.Log("HealingFountain.coll = " + coll.name);

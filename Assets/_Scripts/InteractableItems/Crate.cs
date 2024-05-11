@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//可销毁类的脚本:可挂在于木箱等障碍物
 public class Crate : Fighter
 {
     private void Start()
@@ -19,7 +18,6 @@ public class Crate : Fighter
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
         }
 
-        //如果对象血量低于0,则死亡
         if (hitPoint <= 0)
         {
             hitPoint = 0;

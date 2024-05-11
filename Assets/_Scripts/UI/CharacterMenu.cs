@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//装备菜单的UI:包括武器升级,人物切换,显示生命值/等级/金币,经验值
 public class CharacterMenu : MonoBehaviour
 {
     [Header("------Text------")]
@@ -11,16 +10,11 @@ public class CharacterMenu : MonoBehaviour
     public Text hitpointText, pesosText, upgradeCostText, xpText;
 
     [Header("------Sprite/Image------")]  
-    public Image characterSprite;                       //Player的Sprite
-    public Image weaponSprite;                          //Weapon的Sprite
-    private int currentCharacterSelection = 0;          //当前选择的PlayerSprite序号
-
+    public Image characterSprite;                           public Image weaponSprite;                              private int currentCharacterSelection = 0;          
     [Header("------其他------")]
-    public RectTransform xpBar;                         //经验条
-    public GameObject savingTextObject;
+    public RectTransform xpBar;                             public GameObject savingTextObject;
 
-    //人物切换按钮:
-    public void OnArrowClick(bool right)
+        public void OnArrowClick(bool right)
     {
         if (right)
         {
@@ -40,40 +34,32 @@ public class CharacterMenu : MonoBehaviour
         }
     }
 
-    //替换所选择的Sprite函数:
-    private void OnSelectionChanged()
+        private void OnSelectionChanged()
     {
         characterSprite.sprite = GameManager.instance.playerSprites[currentCharacterSelection];
         GameManager.instance.player.SwapSprite(currentCharacterSelection);
     }
 
-    //武器升级按钮:
-    public void OnUpgradeClick()
+        public void OnUpgradeClick()
     {
-        //若判断结果为true,代表武器可以升级
-        if (GameManager.instance.TryUpgradeWeapon())
+                if (GameManager.instance.TryUpgradeWeapon())
             UpdateMenu();
     }
 
-    //Menu菜单更新函数:
-    public void UpdateMenu()
+        public void UpdateMenu()
     {
-        //更新武器sprite及升级所需金币
-        weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
+                weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
 
-        //若当前武器的等级已经达到武器价格表长度,即说明已经升级到最高等级,否则更新显示升级当前武器所需价格
-        if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
+                if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
             upgradeCostText.text = "MAX";
         else
             upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
 
-        //更新人物等级,生命值,金币
-        levelTextMenu.text = GameManager.instance.GetCurrentLevel().ToString();
+                levelTextMenu.text = GameManager.instance.GetCurrentLevel().ToString();
         hitpointText.text = GameManager.instance.player.hitPoint.ToString() + " /" + GameManager.instance.player.maxHitPoint;
         pesosText.text = GameManager.instance.pesos.ToString();
 
-        //更新XpBar
-        int currentLevel = GameManager.instance.GetCurrentLevel();
+                int currentLevel = GameManager.instance.GetCurrentLevel();
         if (currentLevel == GameManager.instance.xpTable.Count)
         {
             xpText.text = GameManager.instance.experience.ToString() + " total exprience points";

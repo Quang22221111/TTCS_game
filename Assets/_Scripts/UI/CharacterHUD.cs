@@ -3,29 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//左上角的UI:包括当前等级,生命值,经验值,怒气值
 public class CharacterHUD : MonoBehaviour
 {
-    public RectTransform healthBar;     //生命条
-    public RectTransform xpBar;         //经验条
-    public RectTransform rageBar;       //怒气条
-    public Image rImage;                //R标记
+    public RectTransform healthBar;         public RectTransform xpBar;             public RectTransform rageBar;           public Image rImage;                
+    public Text level;                  
 
-    public Text level;                  //等级text
-
-
-    //Menu菜单更新函数:
-    public void UpdateHUD()
+        public void UpdateHUD()
     {
-        //更新人物等级
-        level.text = GameManager.instance.GetCurrentLevel().ToString();
+                level.text = GameManager.instance.GetCurrentLevel().ToString();
 
-        //更新healthBar
-        float ratio = (float)GameManager.instance.player.hitPoint / (float)GameManager.instance.player.maxHitPoint;
+                float ratio = (float)GameManager.instance.player.hitPoint / (float)GameManager.instance.player.maxHitPoint;
         healthBar.localScale = new Vector3(ratio, 1, 1);
 
-        //更新XpBar
-        int currentLevel = GameManager.instance.GetCurrentLevel();
+                int currentLevel = GameManager.instance.GetCurrentLevel();
         if (currentLevel == GameManager.instance.xpTable.Count)
         {
             xpBar.localScale = Vector3.one;
@@ -42,8 +32,7 @@ public class CharacterHUD : MonoBehaviour
             xpBar.localScale = new Vector3(completionRatio, 1, 1);
         }
 
-        //更新RageBar
-        rageBar.localScale = new Vector3(GameManager.instance.player.rage / GameManager.instance.player.maxRage, 1, 1);
+                rageBar.localScale = new Vector3(GameManager.instance.player.rage / GameManager.instance.player.maxRage, 1, 1);
         if (GameManager.instance.player.rage == GameManager.instance.player.maxRage)
             rImage.gameObject.SetActive(true);
         else

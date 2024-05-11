@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Trap : EnemyHitBox
 {
-    public float lateToStart = 1f;  //几秒后启动陷阱(实现非同步的陷阱阵列)
-    private Animator animator;      //Trap的animator
+    public float lateToStart = 1f;  
+    private Animator animator;     
 
     protected override void Start()
     {
         base.Start();
         animator = GetComponent<Animator>();
 
-        //开启协程,延时后启用陷阱
         StartCoroutine("StartTrap");
     }
 

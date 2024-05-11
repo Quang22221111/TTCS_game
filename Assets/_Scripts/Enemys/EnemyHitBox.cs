@@ -14,7 +14,7 @@ public class EnemyHitBox : Collectable
         {
             Damag dmg = new Damag
             {
-                damageAmount = damage,
+                damageAmount = 1,
                 origin = transform.position,
                 pushForce = pushForce
             };

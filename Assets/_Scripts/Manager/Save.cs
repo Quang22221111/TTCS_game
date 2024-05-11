@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Save
 {
-    public int pesos;                               //金币
-    public int experience;                          //经验
+    public int pesos;                               
+    public int experience;                         
     public int WeaponLevel;
     public int rage;
 }

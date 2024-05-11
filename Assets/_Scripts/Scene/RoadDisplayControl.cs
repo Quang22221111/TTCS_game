@@ -15,7 +15,7 @@ public class RoadDisplayControl : MonoBehaviour
 
     private void Update()
     {
-        //当敌人全部消灭，开启道路
+    
         num = enemys.transform.childCount;
 
         if (num == 0)
